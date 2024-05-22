@@ -1,0 +1,103 @@
+:root {
+    --Primary-Green: hsl(75, 94%, 57%);
+    --Neutral-White: hsl(0, 0%, 100%);
+    --Neutral-Grey: hsl(0, 0%, 20%);
+    --Neutral-Dark-Grey: hsl(0, 0%, 12%);
+    --Neutral-Off-Black: hsl(0, 0%, 8%);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--Neutral-Off-Black);
+    color: var(--Neutral-White);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0 20px;
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+.container {
+    text-align: center;
+    max-width: 392px;
+    width: 100%;
+    padding: 17px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: var(--Neutral-Dark-Grey);
+    
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+/* Mobile styles (up to 375px) */
+@media (max-width: 375px) {
+    .container {
+        padding: 10px;
+    }
+
+    .circle-image {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+}
+
+.main-heading {
+
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+
+}
+.description {
+    color: var(--Primary-Green);
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-weight: 600; /* Maximum value is 900, use 700 for bold */
+}
+
+.skills {
+
+    margin-bottom: 26px;
+    font-weight: 400;
+}
+.Profile {
+    background-color: var(--Neutral-Grey); 
+    width: 270px;
+    margin: 10px auto;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+}
+
+.Profile:hover {
+    color: black; /* Text color changes to black on hover */
+    background-color: var(--Primary-Green); /* Background color changes to green on hover */
+    font-weight: 600;
+}
